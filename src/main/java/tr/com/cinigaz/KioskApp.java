@@ -33,5 +33,6 @@ public class KioskApp extends Application {
     public void start(Stage stage) throws Exception {
         Main.loadView(stage);
 
+
     }
 }
