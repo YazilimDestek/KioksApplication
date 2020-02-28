@@ -1,0 +1,2 @@
+# KioksApplication
+Kiosk Yazılımı Başlangıç
