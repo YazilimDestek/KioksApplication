@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class Main {
     public static void loadView(Stage stage) throws MalformedURLException {
-        URL url = new File("D:\\Work\\Projects\\KioskApplication\\src\\main\\java\\tr\\com\\cinigaz\\views\\Main.fxml").toURI().toURL();
+        URL url = new File("D:\\KioskApplication\\src\\main\\java\\tr\\com\\cinigaz\\views\\Main.fxml").toURI().toURL();
         try {
             Parent parent = FXMLLoader.load(url); //Main.class.getResource("D:\\Work\\Projects\\KioskApplication\\src\\main\\java\\tr\\com\\cinigaz\\views\\Main.fxml"));
             stage.setScene(new Scene(parent));
