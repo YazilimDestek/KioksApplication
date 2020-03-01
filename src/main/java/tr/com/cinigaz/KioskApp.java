@@ -12,6 +12,7 @@ import tr.com.cinigaz.views.Main;
 @SpringBootApplication
 public class KioskApp extends Application {
 
+
     private ConfigurableApplicationContext applicationContext;
 
     @Override
