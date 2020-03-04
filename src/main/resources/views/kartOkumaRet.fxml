@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="tr.com.cinigaz.Controllers.aboneBilgileriController">
+    <children>
+        <ImageView blendMode="DARKEN" fitHeight="1024.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true"
+                   style="-fx-opacity: 4;">
+            <image>
+                <Image url="@1438.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="122.0" fitWidth="469.0" layoutX="419.0" layoutY="14.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@logo_top.png"/>
+            </image>
+        </ImageView>
+        <Button id="anaEkranBtn" layoutX="920.0" layoutY="650.0" mnemonicParsing="false" onAction="#kartOkumaAc2"
+                prefHeight="72.0" prefWidth="276.0" text="ÇIKIŞ" textFill="#5e5434"/>
+        <Label layoutX="519.0" layoutY="378.0" prefHeight="37.0" prefWidth="242.0" text="Bu kart tanımsızdır."
+               textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Cambria" size="24.0"/>
+            </font>
+        </Label>
+        <Label layoutX="430.0" layoutY="415.0" text="KARTINIZI ALABİLİRSİNİZ.">
+            <font>
+                <Font name="Cambria" size="36.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

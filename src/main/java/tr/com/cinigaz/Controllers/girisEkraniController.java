@@ -1,26 +1,51 @@
 package tr.com.cinigaz.Controllers;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
+
 
 public class girisEkraniController {
-    public static void loadView(Stage stage) throws MalformedURLException {
-        URL url = new File("D:\\KioskApplication\\src\\main\\java\\tr\\com\\cinigaz\\views\\girisEkrani.fxml").toURI().toURL();
+
+    @FXML
+    private Button kartOkumaAcBtn;
+
+    @FXML
+    private void kartOkumaAc(ActionEvent kartOkumaEvent) {
+        // onceki ekranı kapat.
+        Stage stage2;
+        stage2 = (Stage) kartOkumaAcBtn.getScene().getWindow();
+        stage2.hide();
+        // Burada kart bilgilieri alınbmay çalışılacak :: // Özgür
+        // Soraki ekrana karar ver
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/views/kartOkumaRet.fxml"));     // Bu kart tanımsız
+        // veya
+        //  FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/views/aboneBilgiEkranı.fxml")); // Abone bilgilerinin gösterildiği ekran
+        Parent root1;
         try {
-            Parent parent = FXMLLoader.load(url); //Main.class.getResource("D:\\Work\\Projects\\KioskApplication\\src\\main\\java\\tr\\com\\cinigaz\\views\\girisEkrani.fxml"));
-            stage.setScene(new Scene(parent));
+            root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.setTitle("ÇİNİGAZ DOĞALGAZ KİOSK FATURA ODEME");
+
+            stage.setScene(new Scene(root1));
             stage.show();
         } catch (IOException e) {
+            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
 
 
 }
+
+
