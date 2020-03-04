@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="tr.com.cinigaz.Controllers.aboneBilgileriController">
+            fx:controller="tr.com.cinigaz.Controllers.girisEkraniController">
     <children>
         <ImageView blendMode="DARKEN" fitHeight="1024.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true"
                    style="-fx-opacity: 4;">
